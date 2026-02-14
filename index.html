@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vikram Godara | Full Stack Storytelling Portfolio</title>
+    <meta
+      name="description"
+      content="Story-driven portfolio of Vikram Godara, full stack developer building modern, scalable, user-focused web products."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <header class="site-header">
+      <a class="logo" href="#home">Vikram<span>.dev</span></a>
+      <button class="menu-btn" aria-label="Toggle menu">☰</button>
+      <nav>
+        <a href="#story">Story</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero container">
+        <div class="hero-left">
+          <p class="eyebrow">A Story of Craft, Code, and Curiosity</p>
+          <h1>
+            I’m Vikram Godara —
+            <span>a Full Stack Web Developer</span>
+            building digital products that feel fast, clear, and alive.
+          </h1>
+          <p class="lead">
+            From first pixel to production API, I focus on real-world engineering:
+            responsive UI, maintainable backend logic, and systems that scale with users.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="https://github.com/vikram-godara" target="_blank" rel="noreferrer">Explore GitHub</a>
+            <a class="btn btn-ghost" href="https://codolio.com/profile/vikram-godara" target="_blank" rel="noreferrer">Open Codolio</a>
+          </div>
+        </div>
+
+        <aside class="hero-right">
+          <article class="profile-card">
+            <img id="profileImage" src="https://avatars.githubusercontent.com/vikram-godara" alt="Vikram Godara GitHub profile" />
+            <div>
+              <h2 id="profileName">Vikram Godara</h2>
+              <p id="profileBio">Full Stack Developer</p>
+              <p class="meta" id="profileLocation">Loading location...</p>
+            </div>
+          </article>
+
+          <article class="terminal-card" aria-label="Developer Status Terminal">
+            <div class="terminal-top">
+              <span></span><span></span><span></span>
+              <strong>status.sh</strong>
+            </div>
+            <pre id="terminalOutput"></pre>
+          </article>
+        </aside>
+      </section>
+
+      <section id="story" class="container story panel">
+        <h2>The Developer Story</h2>
+        <p>
+          My journey started with curiosity: how interfaces work, how backend systems talk,
+          and how software can solve practical problems. Over time, that curiosity became
+          a disciplined process — design, build, test, optimize, and ship.
+        </p>
+        <p>
+          Today, I build complete web solutions where frontend elegance meets backend reliability.
+          I care about readability, performance, developer experience, and measurable user value.
+        </p>
+      </section>
+
+      <section class="container stats-wrap">
+        <article><h3 id="repoCount">--</h3><p>Public Repositories</p></article>
+        <article><h3 id="followersCount">--</h3><p>GitHub Followers</p></article>
+        <article><h3 id="followingCount">--</h3><p>Following</p></article>
+        <article><h3 id="starsCount">--</h3><p>Total Stars Earned</p></article>
+      </section>
+
+      <section id="skills" class="container">
+        <h2>What I Build With</h2>
+        <div class="skills-grid">
+          <article>
+            <h3>Frontend Engineering</h3>
+            <ul>
+              <li>HTML5, CSS3, JavaScript (ES6+)</li>
+              <li>React.js, Next.js, reusable components</li>
+              <li>Responsive UX, accessibility, interaction polish</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Backend Engineering</h3>
+            <ul>
+              <li>Node.js, Express.js, REST API design</li>
+              <li>Auth, validation, business logic architecture</li>
+              <li>Performance-oriented endpoint design</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Data & Deployment</h3>
+            <ul>
+              <li>MongoDB, SQL systems (MySQL/PostgreSQL)</li>
+              <li>Firebase/Supabase integrations</li>
+              <li>Vercel, Netlify, Render deployment workflows</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Workflow & Quality</h3>
+            <ul>
+              <li>Git/GitHub collaboration practices</li>
+              <li>API testing, debugging, iteration loops</li>
+              <li>Clean commits, maintainable code structure</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="container">
+        <div class="section-head">
+          <h2>Featured Work from GitHub</h2>
+          <p>Auto-generated from your latest profile activity.</p>
+        </div>
+        <div id="projectsGrid" class="projects-grid"></div>
+      </section>
+
+      <section id="journey" class="container panel">
+        <h2>How I Deliver Projects</h2>
+        <div class="journey-grid">
+          <article>
+            <h3>01 — Understand</h3>
+            <p>Break goals into user problems, technical constraints, and measurable outcomes.</p>
+          </article>
+          <article>
+            <h3>02 — Architect</h3>
+            <p>Design clean frontend/backend boundaries with scalable modules and APIs.</p>
+          </article>
+          <article>
+            <h3>03 — Implement</h3>
+            <p>Build rapidly with quality checks, keeping UX smooth and code maintainable.</p>
+          </article>
+          <article>
+            <h3>04 — Optimize</h3>
+            <p>Improve speed, accessibility, and reliability before going live.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="container contact">
+        <h2>Let’s Build Something Valuable</h2>
+        <p>
+          I’m open to <strong>internships</strong>, freelance collaborations, and impactful full-stack opportunities.
+        </p>
+        <div class="contact-links">
+          <a href="https://github.com/vikram-godara" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://codolio.com/profile/vikram-godara" target="_blank" rel="noreferrer">Codolio</a>
+          <a href="mailto:vikramgodara.dev@gmail.com">vikramgodara.dev@gmail.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Vikram Godara · Designed as a narrative portfolio experience.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
